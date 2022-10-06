@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
+    <style>
+        body {
+            font-family: 'Barlow', serif;
+            /*background-color: #222;
+            color: white;*/
+        }
+
+        header {
+            background-image: url("banner3.png");
+            background-position: center 70%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            filter: drop-shadow(0 0 5px black);
+            font-size: 10rem;
+        }
+
+        a {
+            color: violet;
+        }
+    </style>
+    <title>The Stable Cabal</title>
+</head>
+
+<body>
+    <header>
+        <div class="container white">
+            <h1>The Stable Cabal</h1>
+        </div>
+    </header>
+    <div class="container">
+        <section>
+            <blockquote>
+                <h6><em>noun</em></h6>
+                <ol>
+                    <li>
+                        A group of people working in loose collaboration to enable the incredible
+                        art generating AI called Stable Diffusion.
+                    </li>
+                    <li>
+                        A set of tools that communicate with a standardised API to allow total freedom to create and
+                        explore.
+                    </li>
+                </ol>
+            </blockquote>
+        </section>
+        <div class="row">
+
+            <div class="column">
+                <section>
+                    <h2>The Server</h2>
+                    <p>
+                        There's too much to do to reinvent the wheel. All the tools
+                        from the Stable Cabal use a common API to connect to a server.</p>
+                    <p>
+                        The <a href="https://github.com/hafriedlander/stable-diffusion-grpcserver">Stable
+                            Diffusion
+                            GRPCserver</a>,
+                        can be run on a machine on your local network, or (coming soon) in Colab or any Docker server.
+                    </p>
+                    <p>While many versions of the
+                        server exist, if you are unsure then this is the one that we recommend you start with.</p>
+                    <p>
+                        For what will be added in the future, <a
+                            href="https://github.com/users/hafriedlander/projects/1">a roadmap
+                            for future development</a> is available
+                    </p>
+                </section>
+
+            </div>
+
+            <div class="column">
+                <section>
+                    <h2>The Clients</h2>
+                    <div>
+                        <h4>IDEA2.ART</h4>
+                        <p>
+                            A web UI focused on making generating AI art accessible and easy, while
+                            still unlocking all the power Stable Diffusion makes available.
+                            Can be <a href="https://github.com/hafriedlander/idea2art">downloaded seperately</a>, or <a
+                                href="https://github.com/hafriedlander/idea2art-aio">as part of an AIO</a> that combines
+                            idea2.art
+                            with the GRPCserver in a
+                            single easy to install package.
+                        </p>
+
+                    </div>
+                    <div>
+                        <h4>G-Diffuser</h4>
+                        <p>
+                            A <a href="https://github.com/parlance-zz/g-diffuser-bot">set of tools</a> including a
+                            Discord bot and
+                            CLI client focused on exploring the boundaries
+                            of Stable Diffusion's capabilities. The discord bot provides an experience familiar to users
+                            of Midjourney, and the CLI allows creating matrices that explore the effects of various
+                            parameters
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Flying Dog Photoshop and Krita plugins (Stable Cabal support coming soon)</h4>
+                        <p>
+                            An <a href="https://www.flyingdog.de/sd/en/">open source plugin for Krita</a> and a <a
+                                href="https://www.flyingdog.de/sd/">commercial plugin for Photoshop</a> that
+                            integrates the Stable Diffusion experience into artist's existing workingflows.
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Alternate Servers</h2>
+                    <p>
+                        Because a common, open protocol is used, users can try out alternative implementations of
+                        servers
+                        to try new out new features or changes that for one reason or another have not yet made it into
+                        the main
+                        server.
+                    </p>
+                    <div>
+                        <h4>G-Diffuser Server</h4>
+                        <p>
+                            In addition to the Discord bot and CLI, G-Diffuser includes a modified server enhanced by
+                            it's author
+                            Parlance for speed and outpainting quality.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>Stability.AI API</h4>
+                        <p>
+                            Although not part of the Stable Cabal, the Stable Cabal API is an extension to the official
+                            Stability.ai
+                            API, and many Stable Cabal clients will work (with some limitations due to missing features)
+                            with their server.
+                        </p>
+                        <div>
+                        </div>
+                </section>
+            </div>
+        </div>
+</body>
+
+</html>
